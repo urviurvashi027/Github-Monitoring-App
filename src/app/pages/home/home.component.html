@@ -7,7 +7,7 @@
             <div class="list" *ngIf="showOrganisationList">
                 <h5>Registered Organisation</h5>
                 <app-list [listArray]="organisation"></app-list>
-                <app-button (onClick)="onMonitorBtnClicked($event)" [buttonConfig]="monitorBtnConfig"></app-button>
+                <app-button (onClick)="onMonitorBtnClicked()" [buttonConfig]="monitorBtnConfig"></app-button>
             </div>  
     </section>
 

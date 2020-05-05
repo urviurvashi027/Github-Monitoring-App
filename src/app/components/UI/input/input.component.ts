@@ -17,7 +17,7 @@ export class InputComponent implements OnInit {
   }
 
   //on Model changes event
-  inputHandler(){
+  inputHandler(ev){
       this.onInputClick.emit();
   }
 

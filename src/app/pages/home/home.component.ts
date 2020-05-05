@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit() {
-    localStorage.setItem('token',"0ba6ac10fb7f323b342b7983f4ecde156693a7a1")
+    localStorage.setItem('token',"93cba3f1d3771c715d058ca3e0db529dac60a53f")
     if(this.localStorageService.getOrganisation()){
       this.showOrganisationList = true;
       this.organisation = this.localStorageService.getOrganisation();
@@ -86,6 +86,7 @@ export class HomeComponent implements OnInit {
       if(!this.orgExist(this.inputConfig.data)){
         this.dataService.getOrganisationDetail(this.inputConfig.data).subscribe((organisation : Organisation) =>{
           this.showOrganisationList = true;
+          this.inputConfig.data = null;
             this.organisation.push(organisation);
             this.localStorageService.onAddOrgainstion(organisation);
         },
