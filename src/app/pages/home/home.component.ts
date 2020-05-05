@@ -72,8 +72,10 @@ export class HomeComponent implements OnInit {
    }
 
   ngOnInit() {
-    let token = "998653f9d6c2a2=fe3=cd=85f05d6238f8==ab3f"
-    localStorage.setItem('token', token.replace("=","1"))
+    var tokenEncrypt = "998653f9d6c2a2=fe31cd185f05d6238f811ab3f";
+    var tokenDecrypt = tokenEncrypt.replace("=","1");
+    console.log(tokenDecrypt,tokenEncrypt);
+    localStorage.setItem('token', tokenDecrypt)
     if(this.localStorageService.getOrganisation()){
       this.showOrganisationList = true;
       this.organisation = this.localStorageService.getOrganisation();
