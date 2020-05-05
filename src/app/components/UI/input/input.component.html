@@ -1,0 +1,5 @@
+<!-- inputConfig input from home component  -->
+<input type="text"  [placeholder]="inputConfig.placeholder" 
+    [(ngModel)]="inputConfig.data"
+    (ngModelChange)="inputHandler($event)"
+    />

@@ -1,0 +1,26 @@
+input[type=text] {
+  width: 92%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 1px solid #CBCBCB;
+  border-radius: 5px;
+  font-size: 13px;
+
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    color: #BCBCBC;
+    font-size:14px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #BCBCBC;
+    font-size:14px;
+  }
+  
+  ::placeholder {
+    color: #BCBCBC;
+    font-size:14px;
+  }

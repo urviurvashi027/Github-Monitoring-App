@@ -1,0 +1,8 @@
+<!-- buttonConfig input from home component 
+appDebounce is diretive for debounceClick
+debounceClick ouptut event emitter -->
+<div id="button">
+    <button type="button" class="btn" appDebounceClick (debounceClick)="onClickButton($event)" [ngStyle]="buttonConfig.styles">
+      {{ buttonConfig.text }}
+    </button>
+  </div>

@@ -1,0 +1,12 @@
+//button variable
+$paddingBtn:10px;
+
+button{
+    padding: $paddingBtn;
+    min-width: 165px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    position: relative;
+    top: 9px;
+    outline: none;
+}

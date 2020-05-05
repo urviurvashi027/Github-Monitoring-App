@@ -1,0 +1,15 @@
+<!-- tableArray input from home component -->
+<div *ngIf="showTable">
+  <table id="organisations">
+    <caption>Violation Table</caption>
+    <tr>
+      <th *ngFor="let title of tableArray.headers">{{title.name}}</th>
+    </tr>
+    <tr *ngFor="let rows of tableArray.data">
+      <td *ngFor="let col of tableArray.headers">
+        {{rows[col.key]}}
+      </td>
+    </tr>
+  </table>
+</div>
+

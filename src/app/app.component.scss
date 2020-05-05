@@ -1,0 +1,29 @@
+
+header {
+    padding: 0.8rem;
+    background-image: linear-gradient(-180deg,#049FF1,#28AEF5 90%);
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        margin: 1rem;
+        cursor: pointer;
+        outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+
+footer {
+    padding: 1rem;
+    background-image: linear-gradient(-180deg,#049FF1,#28AEF5 90%);
+    border-top: .1rem solid #049FF1;
+    text-align: center;
+    color: #222;
+}

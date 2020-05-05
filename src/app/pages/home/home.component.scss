@@ -1,0 +1,77 @@
+$cardColor: #fff;
+$cardBoxShadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+$cardBoxShadowHover: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+main{
+    width: 98%;
+    margin: 0 auto;
+    min-height: 81vh;
+    display: flex;
+
+    .addOrgArea{
+        flex: 1;
+        margin: 1%;
+        padding: 1rem;
+        background-color: $cardColor;
+        box-shadow: $cardBoxShadow;
+
+        &:hover {
+            box-shadow: $cardBoxShadowHover;
+        }
+    }
+
+    .tableArea{
+        flex: 2;
+        margin: 1%;
+        padding: 1rem;
+        background-color: $cardColor;
+        box-shadow: $cardBoxShadow;
+
+        &:hover {
+            box-shadow: $cardBoxShadowHover;
+        }
+    }
+}
+
+app-input{
+    flex: 2;
+}
+
+app-button{
+    flex: 1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    } 
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    main{
+        flex-direction: column;
+    } 
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    main{
+        flex-direction: column;
+    } 
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    main{
+        flex-direction: row;
+    } 
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    main{
+        flex-direction: row;
+    } 
+  }

@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ngx-toastr/toastr.css";
+
+body {
+    margin: 0px;
+    background-color: #ECECEC;
+}
+
+html, head, body, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+} 
+
+.mb-2 {
+    margin-bottom: .5rem;
+}

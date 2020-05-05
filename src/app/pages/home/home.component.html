@@ -1,0 +1,19 @@
+<main>
+    <section class="addOrgArea">
+        <div style="display: flex;">
+            <app-input [inputConfig]="inputConfig" (onInputClick)="onInputchange()"></app-input>   
+            <app-button (onClick)="onAddOrganisation($event)" [buttonConfig]="addOrgBtnConfig"></app-button>
+        </div>
+            <div class="list" *ngIf="showOrganisationList">
+                <h5>Registered Organisation</h5>
+                <app-list [listArray]="organisation"></app-list>
+                <app-button (onClick)="onMonitorBtnClicked($event)" [buttonConfig]="monitorBtnConfig"></app-button>
+            </div>  
+    </section>
+
+
+    <section class="tableArea">
+        <div></div>
+        <app-table [tableArray]="tableData"></app-table>
+    </section>
+</main>
